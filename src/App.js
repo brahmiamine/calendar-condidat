@@ -217,9 +217,6 @@ const CalendarComponent = () => {
               <h5 className="modal-title" id="exampleModalLabel">
                 {selectedEvent ? "Modifier l'entretien" : "Planifier un entretien"}
               </h5>
-              <button type="button" className="close" aria-label="Close" onClick={() => setModalIsOpen(false)}>
-                <span aria-hidden="true">&times;</span>
-              </button>
             </div>
             <div className="modal-body">
               <p>{selectedEvent && `${selectedEvent.firstName} ${selectedEvent.lastName}, ${selectedEvent.position}`}</p>
